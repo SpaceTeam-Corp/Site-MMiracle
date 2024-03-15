@@ -1,12 +1,58 @@
 :root {
-    --color1: #030183;
+    --color1: #080586;
     --color2: #403AB1;
     --color3: #793AB1;
     --color4: #D1313E;
     --color5: #F4B142;
 }
 
+@font-face {
+    font-family: superOcean;
+    src: url('./TuskerGrotesk-4800Super.ttf');
+}
+
 body {
     margin: 0;
     background: var(--color1);
+    color: whitesmoke;
+    font-family: superOcean;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    margin: 15px;
+}
+
+h1 {
+    letter-spacing: 2px;
+}
+
+li {
+    list-style: none;
+}
+a {
+    color: var(--color5);
+    font-size: 2em;
+    text-decoration: none;
+    transition: 0.5s ease-out;
+}
+a:hover {
+    text-decoration: underline;
+    color: whitesmoke;
+    transition: 0.5s ease;
+}
+
+span {
+    color: whitesmoke;
+    font-size: 7em;
+    letter-spacing: 2px;
+}
+
+br::before {
+    content: "OG";
 }
