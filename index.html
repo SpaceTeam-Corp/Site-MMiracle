@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 	    <link rel="icon" type="image/png" href="./images/favicon.png">
-        <meta name="description" content="Atterisage prévu le 20 Mars 2024, Soyez Prêt !🚀🧑‍🚀">
+        <meta name="description" content="Réveil prévu le 20 Mars 2024, un Miracle va se produire Soyez Prêt !">
         <meta name="keywords" content="BDE, MMI, BDE MMI,Blois,Association, Etudiants,Association Etudiantes, soirée,IUT Blois,IUT,Tours,Université Blois,Univertsité Tours">
         <meta name="author" content="PetitPrince">
         <meta name="copyright" content="© 2024">
@@ -23,24 +23,24 @@
         <li><a href="#">BDE</a></li>
     </nav> -->
 
-    <h1>Réveil dans </h1>
+    <h1>Réveil dans...</h1>
     <p id="time"></p>
-
+    <!-- <span>04J <img style='width: 40px;' class='star' alt='' src='./assets/image-from-rawpixel-id-7623647-original.png'>4H<img style='width: 40px;' class='star' alt='' src='./assets/image-from-rawpixel-id-7623647-original.png'>18Min<img style='width: 40px;' class='star' alt='' src='./assets/image-from-rawpixel-id-7623647-original.png'>30S </span> -->
     <script>
     var countDownDate = new Date("Mar 20, 2024 09:00:00").getTime();
     var x = setInterval(function() {
-    var now = new Date().getTime();
-    var distance = countDownDate - now;
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    document.getElementById("time").innerHTML = "<span>0"+days + "J <br>" + hours + "H <br>"+ minutes + "Min <br>" + seconds + "S </span>";
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        document.getElementById("time").innerHTML = "<span>0"+days + "J <img style='width: 40px;rotate(90deg);' class='star' alt='' src='./assets/image-from-rawpixel-id-7623647-original.png'>" + hours + "H <img style='width: 40px;' class='star' alt='' src='./assets/image-from-rawpixel-id-7623647-original.png'>"+ minutes + "Min <img style='width: 40px;' class='star' alt='' src='./assets/image-from-rawpixel-id-7623647-original.png'>" + seconds + "S </span>";
 
-    if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("time").innerHTML = "EXPIRED";
-    }
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("time").innerHTML = "Terminer !";
+        }
     }, 1000);
     </script>
     </body>
