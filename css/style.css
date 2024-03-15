@@ -17,6 +17,7 @@
 }
 
 body {
+    user-select: none;
     margin: 0;
     background: var(--color1);
     color: whitesmoke;
