@@ -36,7 +36,7 @@
         var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        document.getElementById("time").innerHTML = "<span>0"+ days + "J <img style='width: 40px;rotate(90deg);' class='star' alt='' src='./assets/image-from-rawpixel-id-7623647-original.png'>" + hours + "H <img style='width: 40px;' class='star' alt='' src='./assets/image-from-rawpixel-id-7623647-original.png'>"+ minutes + " MIN <img style='width: 40px;' class='star' alt='' src='./assets/image-from-rawpixel-id-7623647-original.png'>" + seconds + "S </span>";
+        document.getElementById("time").innerHTML = "<span>0"+ days + "J <img style='width: 40px;rotate(90deg);' class='star' alt='' src='./assets/image-from-rawpixel-id-7623647-original.png'>" + hours + "H <img style='width: 40px;' class='star' alt='' src='./assets/image-from-rawpixel-id-7623647-original.png'>"+ minutes + "MIN <img style='width: 40px;' class='star' alt='' src='./assets/image-from-rawpixel-id-7623647-original.png'>" + seconds + "S </span>";
 
         if (distance < 0) {
             clearInterval(x);
