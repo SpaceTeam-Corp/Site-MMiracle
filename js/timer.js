@@ -27,5 +27,5 @@ function initializeClock(id, endtime) {
     }, 1000);
 }
 
-const deadline = '2024-03-20T00:00:00';
+const deadline = '2024-20-03T00:00:00';
 initializeClock('timer', deadline);
