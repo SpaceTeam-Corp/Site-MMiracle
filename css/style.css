@@ -72,14 +72,14 @@ li {
     list-style: none;
 }
 a {
-    color: var(--color2);
+    color: white;
     font-size: 2em;
     text-decoration: none;
     transition: 0.5s ease-out;
 }
 a:hover {
     text-decoration: underline;
-    color: whitesmoke;
+    color: var(--color3);
     transition: 0.5s ease;
 }
 
