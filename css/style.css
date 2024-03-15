@@ -1,0 +1,75 @@
+@font-face {
+    font-family: future;
+    src: url(./black_future/Black\ Future.otf);
+}
+@font-face {
+    font-family: misa;
+    src: url(./13_Misa.TTF);
+}
+body {
+    background-color: #f5f5f5;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(45deg, rgba(9,9,121,1), rgba(0,212,255,1));
+    background-size: 400% 400%;
+    /* cursor: none; */
+}
+
+h1 {
+    font-family: future;
+    text-align: center;
+    font-size: 4em;
+    transition: 1.5s;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+p {
+    font-family: future;
+    font-size: 1.2em;
+    transition: 1.5s;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    transition: 1.5s;
+}
+
+a {
+    text-decoration: none;
+    background-color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    padding: 15px;
+    margin: 8px;
+    font-size: 1.5em;
+    border-radius: 25px;
+}
+
+a:hover {
+    background-color: aqua;
+    transition: 0.7s;
+    color: blue
+}
+
+footer {
+    bottom: 0;
+    position: absolute;
+    font-size: 1em;
+}
+
+.timer-container {
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+#timer {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+}
