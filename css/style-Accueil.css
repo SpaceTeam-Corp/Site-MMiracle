@@ -1,0 +1,225 @@
+:root {
+    --color1: #080586;
+    --color2: #403AB1;
+    --color3: #793AB1;
+    --color4: #D1313E;
+    --color5: #F4B142;
+}
+
+@font-face {
+    font-family: Tusker1;
+    src: url('./TuskerGrotesk-4800Super.ttf');
+}
+
+@font-face {
+    font-family: Tusker2;
+    src: url('./TuskerGrotesk-5500Medium.ttf');
+}
+
+body {
+    overflow-x: hidden;
+    user-select: none;
+    margin: 0;
+    background: var(--color1);
+    color: whitesmoke;
+    font-family: "Outfit", Helvetica, sans-serif;
+    font-weight: bold;
+    height: 100vh;
+    background: linear-gradient(1deg, #403ab1, #080586);
+    background-size: 600% 600%;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: sticky;
+    height: 80px;
+    padding: 10px;
+    font-size: calc(0.5rem + 0.7vw);
+    justify-content: space-around;
+    border-bottom: solid 1px violet;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+    gap: 50px;
+}
+
+li {
+    width: 100%;
+    display: flex;
+}
+
+a {
+    height: 100%;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.menu li a {
+    padding: 12px 24px;
+    border-right: solid 1px violet;
+    border-left: solid 1px violet;
+    transition: 0.5s;
+}
+
+.menu li a:hover {
+    color: var(--color5);
+    transition: 0.5s;
+    text-decoration: underline;
+    background: var(--color1);
+    border-radius:20px;
+}
+
+p {
+    margin: 0;
+}
+
+.left {
+    position: relative;
+}
+.left .left-info {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    -webkit-column-gap: 0.7rem;
+    -moz-column-gap: 0.7rem;
+    column-gap: 0.7rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.left img {
+    height: 5rem;
+    width: auto;
+}
+#lieu {
+    font-weight: 300;
+}
+#icons {
+    display: none;
+    cursor: pointer;
+}
+
+.main {
+    margin: 10px;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.photo {
+    height: auto;
+    background: darkblue;
+    border-radius: 40px;
+    height: fit-content;
+    margin: 15px;
+    width: 350;
+    padding: 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+h1,h2,h3,h4 {
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    margin: 15px;
+}
+h2 {
+    margin: 10px;
+    font-family: Tusker1;
+    letter-spacing: 1px;
+}
+h4 {
+    margin: 5px;
+    text-align: center;
+    font-style: italic;
+    font-size: 1rem;
+    font-family: poppins
+}
+
+.info-photo {
+    display: flex;
+    width: 300px;
+    border: solid 2px var(--color5);
+    background: var(--color3);
+    border-radius: 0 0 40px 40px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo img {
+    width: auto;
+    border: solid 2px var(--color5);
+    border-radius: 50px 50px 0 0;
+}
+
+.photo .etoile {
+    margin-top: 5px;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    #icons {
+        display: block;
+        font-size: 20px;
+    }
+    #icons:before{
+        content: "\2630";
+    }
+
+    .active #icons:before {
+        content: "\2715";
+    }
+
+    .menu li a {
+        padding-left: 20px;
+        border-right: none;
+        border-left: none;
+    }
+
+    nav ul  {
+        position: fixed;
+        left: -100%;
+        top: 101px;
+        flex-direction: column;
+        background: var(--color1);
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: 0.25s;
+        justify-content: flex-start;
+    }
+
+    nav ul {
+        gap: 0;
+    }
+
+    nav li {
+        padding: 20px 0;
+        border-bottom: solid 1px violet;
+    }
+
+    nav li:hover {
+        background: skyblue;
+    }
+
+    .right.active ul {
+        left: 0;
+    }
+}
