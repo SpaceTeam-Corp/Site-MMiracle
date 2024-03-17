@@ -66,6 +66,7 @@ a {
 
 .menu li a {
     padding: 12px 24px;
+    width: 100%;
     border-right: solid 1px violet;
     border-left: solid 1px violet;
     transition: 0.5s;
@@ -102,6 +103,7 @@ p {
 }
 #lieu {
     font-weight: 300;
+    color: violet;
 }
 #icons {
     display: none;
@@ -144,6 +146,11 @@ h2 {
     margin: 10px;
     font-family: Tusker1;
     letter-spacing: 1px;
+}
+
+h3 a{
+    margin: 3px;
+    color: var(--color5);
 }
 h4 {
     margin: 5px;
