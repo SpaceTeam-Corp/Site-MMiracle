@@ -15,6 +15,11 @@
     font-family: Tusker2;
     src: url('./TuskerGrotesk-5500Medium.ttf');
 }
+@font-face {
+    font-family: Poppins;
+    src: url('./Poppins/Poppins-Bold.ttf');
+}
+
 
 body {
     overflow-x: hidden;
@@ -75,7 +80,6 @@ a {
 .menu li a:hover {
     color: var(--color5);
     transition: 0.5s;
-    text-decoration: underline;
     background: var(--color1);
     border-radius:20px;
 }
@@ -124,7 +128,6 @@ p {
     background: darkblue;
     border-radius: 40px;
     height: fit-content;
-    margin: 15px;
     width: 350;
     padding: 25px;
     display: flex;
@@ -141,10 +144,12 @@ h1,h2,h3,h4 {
 
 h1{
     margin: 15px;
+    text-transform: uppercase;
 }
 h2 {
     margin: 10px;
     font-family: Tusker1;
+    text-transform: uppercase;
     letter-spacing: 1px;
 }
 
@@ -155,15 +160,16 @@ h3 a{
 h4 {
     margin: 5px;
     text-align: center;
-    font-style: italic;
     font-size: 1rem;
-    font-family: poppins
+    text-transform: uppercase;
+    font-family: Poppins;
 }
 
 .info-photo {
     display: flex;
     width: 300px;
     border: solid 2px var(--color5);
+    border-top: none;
     background: var(--color3);
     border-radius: 0 0 40px 40px;
     flex-direction: column;
@@ -173,11 +179,11 @@ h4 {
 .photo img {
     width: auto;
     border: solid 2px var(--color5);
-    border-radius: 50px 50px 0 0;
+    border-radius: 40px 40px 0 0;
 }
 
 .photo .etoile {
-    margin-top: 5px;
+    margin-top: 15px;
     border: none;
 }
 
