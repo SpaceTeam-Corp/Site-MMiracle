@@ -239,16 +239,26 @@ i {
 
 .projets {
     display: flex;
+    border: solid 2px var(--color5);
+    border-radius: 50px;
 }
 
 .projet {
-    height: 300px;
+    height: 400px;
     width: 300px;
+    /* background-color: red; */
+    text-align: center;
 }
 
 .projet img {
-    height: auto;
-    width: 80%;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.infosproj{
+    height: 35%;
 }
 
 @media (max-width: 768px) {
