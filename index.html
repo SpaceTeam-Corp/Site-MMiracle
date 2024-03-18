@@ -1,49 +1,130 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-         <title>Coming Soon - MMiracle</title>
+        <title>Accueil - MMiracle</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-	    <link rel="icon" type="image/png" href="./assets/logo.png">
-        <meta name="description" content="Réveil prévu Ce 18 Mars 2024, un Miracle va se produire Soyez Prêt !">
-        <meta name="keywords" content="BDE, MMI, BDE MMI,Blois,Association, Etudiants,Association Etudiantes, soirée,IUT Blois,IUT,Tours,Université Blois,Univertsité Tours">
+	    <link rel="icon" type="image/png" href="./assets/logoW.png">
+        <meta name="description" content="Site officiel du bureau des étudiants des MMI de Blois. Découvrez le calendrier du BDE avec les événements passés et à venir.">
+        <meta name="keywords" content="MMiracle,BDE, MMI, BDE MMI,Blois,Association, Etudiants,Association Etudiantes, soirée,IUT Blois,IUT,Tours,Université Blois,Univertsité Tours">
         <script src="https://kit.fontawesome.com/9e5fc47a4e.js" crossorigin="anonymous"></script>
         <meta name="author" content="PetitPrince">
         <meta name="copyright" content="© 2024">
         <meta name="language" content="fr">
         <meta name="revisit-after" content="30 days">
         <meta name="theme-color" content="#f7f7f7">
-        <link href="css/style.css" rel="stylesheet">
+        <link href="./css/style-Accueil.css" rel="stylesheet">
     </head>
+    <body style="height: 200vh;">
 
-<!--  <nav>
-        <img src="#" id="logo">
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#">Evénements</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">BDE</a></li>
-    </nav> -->
+        <nav>
+            <div class="left">
+                <a class="left-info" href="./">
+                    <img src="./assets/logoW.png">
+                    <div class="BDE_info">
+                        <p>BDE MMiracle</p>
+                        <p id="lieu">IUT Blois<p/>
+                    </div>
+                </a>
+            </div>
+            
+            <div id="nav" class="right">
+                <ul class="menu">
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="./bde.html">BDE</a></li>
+                    <li><a href="./bonus.html">Bonus</a></li>
+                </ul>
+                <div id="icons"></div>
+            </div>
+        </nav>
 
-    <h1>Réveil dans...</h1>
-    <p id="time"></p>
-    <!-- <span>04J <img style='width: 40px;' class='star' alt='' src='./assets/image-from-rawpixel-id-7623647-original.png'>4H<img style='width: 40px;' class='star' alt='' src='./assets/image-from-rawpixel-id-7623647-original.png'>18Min<img style='width: 40px;' class='star' alt='' src='./assets/image-from-rawpixel-id-7623647-original.png'>30S </span> -->
+        <section class="first">
+            <h1 id="text1">MMIracle</h1>
+            <h1 id="text2">Bien plus qu'un mirage</h1>
+            <div class="presentation1">
+                <img src="./assets/gabystars.svg" id="etoile1" alt="étoiles" height="40px" style="position: relative;margin:15px;">
+
+                <h3 id="text3" style="position: relative;">Le BDE le plus cool des BDE</h3>
+
+                <img src="./assets/gabystars.svg" id="etoile2" alt="étoiles" height="40px" style="position: relative;margin:15px;">
+            </div>
+
+            <a id="arrow_scroll" href="#part"><i class="fa-solid fa-chevron-down"></i></a>
+        </section>
+
+        <section class="second" id="part">
+            <h1>TROU - Story</h1>
+            <video height="80%" loop controls src="https://mmiracle.fr/MMiracle.mp4"></video>
+        </section>
+
+        <section class="third">
+            <h1>Nos Projets</h1>
+            <div class="projets"> 
+
+                <div class="projet">
+                    <div class="infosproj">
+                        <h1>MMiracle MC</h1>
+                        <p>Serveur Minecraft pour les aMMIs !!!</p>
+                    </div>
+                    
+                    <img src="./assets/MC.png"></img>
+                </div>
+
+                <div class="projet">
+                    <div class="infosproj">
+                        <h1>MMinuit de la culture</h1>
+                        <p>Viens tester ta culture générale face aux autres MMI !!!</p>
+                    </div>
+                    
+                    <img src="./assets/Affiche_MMIDI_MMINUIT.png"></img>
+                </div>
+
+                <div class="projet">
+                    <div class="infosproj">
+                        <h1>LAN Jeux Videos Inter ASSO</h1>
+                        <p>Defis les autres étudiants de l'IUT lors d'une grande LAN</p>
+                    </div>
+                    
+                    <img src="./assets/airthelan-v2-2020-49.webp"></img>
+                </div>
+            </div>
+        </section>
+
+
+    <script src="./js/index.js"></script>
     <script>
-    var countDownDate = new Date("Mar 18, 2024 18:00:00").getTime();
-    var x = setInterval(function() {
-        var now = new Date().getTime();
-        var distance = countDownDate - now;
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        document.getElementById("time").innerHTML = "<span>0"+ days + "J <img style='width: 40px;rotate(90deg);' class='star' alt='' src='./assets/image-from-rawpixel-id-7623647-original.png'>" + hours + "H <img style='width: 40px;' class='star' alt='' src='./assets/image-from-rawpixel-id-7623647-original.png'>"+ minutes + "MIN <img style='width: 40px;' class='star' alt='' src='./assets/image-from-rawpixel-id-7623647-original.png'>" + seconds + "S </span>";
+        let text1 = document.getElementById('text1');
+        let text2 = document.getElementById('text2');
+        let text3 = document.getElementById('text3');
+        let etoile1 = document.getElementById('etoile1');
+        let etoile2 = document.getElementById('etoile2');
+        let arrow_scroll = document.getElementById('arrow_scroll');
+        let section2 = document.getElementById('second')
 
-        if (distance < 0) {
-            clearInterval(x);
-            window.location.href="./accueil.html";
+        
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+            console.log(value);
+            text1.style.marginRight = value * 1 + 'px';
+            text2.style.marginRight = value * -1 + 'px';
+            text3.style.right = value * 0.05 + 'px';
+            etoile1.style.right = value * 0.8 + 'px';
+            etoile2.style.right = value * -0.8 + 'px';
+            arrow_scroll.style.opacity = 800 - value +'%';
+            if(value>800) {
+                change_color()
+            }
+            if(value<800) {
+                change_color_reverse()
+            }
+        })
+
+        function change_color(){
+            section2.style.backgroundColor = "black";
         }
-    }, 1000);
+        function change_color_reverse(){
+            section2.style.backgroundColor = "white";
+        }
     </script>
-    <a href="https://www.instagram.com/bdemmiracle/"><i class="fa-brands fa-instagram"></i></a>
     </body>
 </html>
