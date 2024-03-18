@@ -174,7 +174,7 @@ h4 {
 .info-photo {
     display: flex;
     width: 300px;
-    border-top: none;
+    border-top: solid 2px var(--color5);
     background: var(--color3);
     border-radius: 0 0 40px 40px;
     flex-direction: column;
