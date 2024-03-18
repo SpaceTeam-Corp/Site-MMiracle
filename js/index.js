@@ -1,7 +1,6 @@
 const links = document.querySelectorAll("nav li");
 
 icons.addEventListener("click", () => {
-    console.log('hey')
     nav.classList.toggle("active")
 })
 
