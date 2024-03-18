@@ -236,3 +236,11 @@ h4 {
         left: 0;
     }
 }
+
+@media (min-width: 768px) {
+    .photos {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
